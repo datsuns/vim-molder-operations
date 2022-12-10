@@ -6,19 +6,19 @@ function! molder#extension#operations#init() abort
   nnoremap <plug>(molder-operations-shell) :<c-u>call molder#extension#operations#shell()<cr>
 
   if !hasmapto('<plug>(molder-operations-newdir)')
-    nmap <buffer> <leader>n <plug>(molder-operations-newdir)
+    nmap <buffer> <leader>N <plug>(molder-operations-newdir)
   endif
   if !hasmapto('<plug>(molder-operations-delete)')
-    nmap <buffer> <leader>d <plug>(molder-operations-delete)
+    nmap <buffer> <leader>D <plug>(molder-operations-delete)
   endif
   if !hasmapto('<plug>(molder-operations-rename)')
-    nmap <buffer> <leader>r <plug>(molder-operations-rename)
+    nmap <buffer> <leader>R <plug>(molder-operations-rename)
   endif
   if !hasmapto('<plug>(molder-operations-command)')
     nmap <buffer> <leader>! <plug>(molder-operations-command)
   endif
   if !hasmapto('<plug>(molder-operations-shell)')
-    nmap <buffer> <leader>s <plug>(molder-operations-shell)
+    nmap <buffer> <leader>S <plug>(molder-operations-shell)
   endif
 endfunction
 
